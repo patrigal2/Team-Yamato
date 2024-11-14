@@ -39,7 +39,7 @@ def main():
 
     # Mostrar el tablero del jugador al iniciar el juego, con posiciones de barcos visibles
     print("\nEste es tu tablero inicial con tus posiciones de barcos:")
-    imprimir_tablero(tablero_jugador.tablero_visible)
+    imprimir_tablero(tablero_jugador.tablero_interno)
 
     juego_terminado = False
     turno_jugador = True  
