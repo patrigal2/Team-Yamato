@@ -37,6 +37,8 @@ El objetivo del juego es hundir la flota, es decir, todos los barcos del otro ju
 
 5. Funciona por turnos y empiezas tú.
 
+## Juego
+
 ## Tableros
 
 El tablero de 10 x 10 posiciones donde irán los barcos
