@@ -10,7 +10,7 @@ El team Yamato ha creado un codigo para jugar al juego de hundir la flota.
     - [Relgas del juego](#reglas-del-juego)
   - [**Tableros**](#comentarios-y-aclaraciones)
     - [Cada jugador tendrá dos tableros](#Cada-jugador-tendrá-dos-tableros)
-  - [**Juego**](#juego)
+  - [**Flujo del Juego**](#flujo-del-juego)
   - [**Comentarios y Aclaraciones**](#comentarios-y-aclaraciones)
 
 
@@ -37,23 +37,50 @@ El objetivo del juego es hundir la flota, es decir, todos los barcos del otro ju
 
 5. Funciona por turnos y empiezas tú.
 
-## Juego
-
 ## Tableros
 
 El tablero de 10 x 10 posiciones donde irán los barcos
+
+## Flujo del Juego
+
+**Inicialización:**
+Se crean dos tableros: uno para el jugador y otro para la máquina.
+Los barcos se colocan en posiciones válidas de forma aleatoria.
+
+**Turnos:**
+
+Jugador:
+- Introduce las coordenadas de disparo.
+- El programa valida si el disparo impacta o falla.
+- Si impacta, el jugador vuelve a disparar. Si falla, es turno de la máquina.
+
+Máquina:
+- Genera un disparo aleatorio y verifica su efecto.
+- Similar al jugador, repite si impacta y cede el turno si falla.
+  
+**Visualización:**
+Se actualizan y muestran los tableros después de cada turno:
+ - El jugador ve su tablero con los disparos recibidos y el tablero visible del oponente.
+
+**Fin del juego:**
+Cuando un jugador pierde todos sus barcos, el programa anuncia el ganador.
 
 #### Cada jugador tendrá dos tableros
 1. Un tablero donde se ven los barcos colocados
 2. Otro trablero en blanco, que sería el del oponenete, que se irán visualizando los disparos, si se ha acertado o no.
 
 
-
 ## Comentarios y Aclaraciones
-
-
 Para la ejecución de este programa está guardado el código en varios scripts:
 
 1. main.py
+2. funciones.py
+3. variables.py
+4. tablero.py
 
 ## Equipo
+- [antoniiio2000](https://github.com/antoniiio2000)
+- [cmonzon-94](https://github.com/cmonzon-94)
+- [FuaElKiks](https://github.com/FuaElkiks)
+- [patrigal2](https://github.com/patrigal2)
+- [AlbrtttoTorres](https://github.com/AlbertttoTorres)
