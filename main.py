@@ -15,24 +15,25 @@ from variables import DIMENSIONES, BARCOS
 
 def empezar_juego():
     """Inicia la partida y solicita el nombre del jugador."""
-    pregunta_01 = input("Hola, ¿quieres iniciar una partida? (Contesta si o no): ")
+    while True:  # Bucle para validar la entrada
+        pregunta_01 = input("Hola, ¿quieres iniciar una partida? (Contesta si o no): ").strip().lower()
+        if pregunta_01 == "si":
+            pregunta_02 = input("¿Cómo te llamas? ").strip()
+            print(regla_juego)
+            return pregunta_02  # Devuelve el nombre del jugador
+        elif pregunta_01 == "no":
+            print("Veo que no quieres jugar. ¡Hasta la próxima!")
+            return None  # Salir del juego
+        else:
+            print("Por favor, responde solo con 'si' o 'no'.")  
 
-    # Convertimos la respuesta a minúsculas para hacerla insensible a mayúsculas/minúsculas
-    if pregunta_01.strip().lower() == "si":
-        pregunta_02 = input("¿Cómo te llamas? ")
-        print(regla_juego)
-        return pregunta_02
-    else:
-        print("Veo que has introducido un caracter no esperado, !Hasta la próxima¡")
-        return None
 def salir_del_juego():
     """Permite al jugador salir en cualquier momento."""
-    salir = input("¿Quieres salir del juego? (si/no): ").strip().lower()
-    return salir == "si"
-def salir_del_juego():
-    """Permite al jugador salir en cualquier momento."""
-    salir = input("¿Quieres salir del juego? (si/no): ").strip().lower()
-    return salir == "si"
+    while True:  # Bucle para validar la entrada
+        salir = input("¿Quieres salir del juego? (si/no): ").strip().lower()
+        if salir in ("si", "no"):
+            return salir == "si"
+        print("Por favor, responde solo con 'si' o 'no'.")
 def main():
     nombre_jugador = empezar_juego()
     if not nombre_jugador:
@@ -58,7 +59,7 @@ def main():
 
             # Preguntar si el jugador desea salir antes de cada disparo
             if salir_del_juego():
-                print(f"{nombre_jugador} Has decidido salir del juego. ¡Hasta la próxima!")
+                print(f"{nombre_jugador} has decidido salir del juego. ¡Hasta la próxima!")
                 imprimir_tablero(tablero_maquina.tablero_visible)
                 break
 
