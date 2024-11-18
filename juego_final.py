@@ -1,4 +1,4 @@
-# Juego final main.py
+#main.py
 
 num_vidas_h = 20
 num_vidas_m = 20
