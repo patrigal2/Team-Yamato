@@ -1,4 +1,4 @@
-#main.py
+# main.py
 
 num_vidas_h = 20
 num_vidas_m = 20
@@ -25,7 +25,14 @@ def empezar_juego():
     else:
         print("Veo que has introducido un caracter no esperado, !Hasta la próxima¡")
         return None
-
+def salir_del_juego():
+    """Permite al jugador salir en cualquier momento."""
+    salir = input("¿Quieres salir del juego? (si/no): ").strip().lower()
+    return salir == "si"
+def salir_del_juego():
+    """Permite al jugador salir en cualquier momento."""
+    salir = input("¿Quieres salir del juego? (si/no): ").strip().lower()
+    return salir == "si"
 def main():
     nombre_jugador = empezar_juego()
     if not nombre_jugador:
@@ -48,6 +55,13 @@ def main():
         if turno_jugador:
             print("\nTu tablero de disparos:")
             imprimir_tablero(tablero_maquina.tablero_visible)
+
+            # Preguntar si el jugador desea salir antes de cada disparo
+            if salir_del_juego():
+                print(f"{nombre_jugador} Has decidido salir del juego. ¡Hasta la próxima!")
+                imprimir_tablero(tablero_maquina.tablero_visible)
+                break
+
             try:
                 x, y = map(int, input("Introduce las coordenadas de disparo (x y): ").split())
                 if not (0 <= x < DIMENSIONES and 0 <= y < DIMENSIONES):
@@ -71,7 +85,8 @@ def main():
             else:
                 print("La máquina falló... ¡Tu turno!")
                 turno_jugador = True
-            
+
+                
         # Comprobación de fin de juego
         if tablero_maquina.barcos_restantes() == 0:
             print("¡Felicidades! Has hundido todos los barcos enemigos. ¡Ganaste!")
@@ -79,6 +94,8 @@ def main():
         elif tablero_jugador.barcos_restantes() == 0:
             print("La máquina ha hundido todos tus barcos. Has perdido.")
             juego_terminado = True
+
+
 
 if __name__ == "__main__":
     main()
