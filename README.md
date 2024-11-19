@@ -47,12 +47,18 @@ El tablero de 10 x 10 posiciones donde irán los barcos
 Se crean dos tableros: uno para el jugador y otro para la máquina.
 Los barcos se colocan en posiciones válidas de forma aleatoria.
 
+Puedes elegir el nivel de dificultad del juego:
+- Facil (1)
+- Normal (2)
+- Dificil (3)
+
 **Turnos:**
 
 Jugador:
 - Introduce las coordenadas de disparo.
 - El programa valida si el disparo impacta o falla.
 - Si impacta, el jugador vuelve a disparar. Si falla, es turno de la máquina.
+- Cuando es el turno del jugador, puede elegir salir del juego y se mostrará el tablero como queda.
 
 Máquina:
 - Genera un disparo aleatorio y verifica su efecto.
