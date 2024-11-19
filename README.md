@@ -48,9 +48,9 @@ Se crean dos tableros: uno para el jugador y otro para la máquina.
 Los barcos se colocan en posiciones válidas de forma aleatoria.
 
 Puedes elegir el nivel de dificultad del juego:
-- Facil (1)
-- Normal (2)
-- Dificil (3)
+- Facil (1) - Un disparo
+- Normal (2) - dos disparos
+- Dificil (3) - tres disparos
 
 **Turnos:**
 
