@@ -73,7 +73,7 @@ Cuando un jugador pierde todos sus barcos, el programa anuncia el ganador.
 
 #### Cada jugador tendrá dos tableros
 1. Un tablero donde se ven los barcos colocados
-2. Otro trablero en blanco, que sería el del oponenete, que se irán visualizando los disparos, si se ha acertado o no.
+2. Otro trablero en blanco, que sería el del oponente, que se irán visualizando los disparos, si se ha acertado o no.
 
 
 ## Comentarios y Aclaraciones
