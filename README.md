@@ -7,7 +7,7 @@ El team Yamato ha creado un codigo para jugar al juego de hundir la flota.
 
   - [**Descripción**](#descripción)
     - [Instalaciones](#instalaciones)
-    - [Relgas del juego](#reglas-del-juego)
+    - [Reglas del juego](#reglas-del-juego)
   - [**Tableros**](#comentarios-y-aclaraciones)
     - [Cada jugador tendrá dos tableros](#Cada-jugador-tendrá-dos-tableros)
   - [**Flujo del Juego**](#flujo-del-juego)
