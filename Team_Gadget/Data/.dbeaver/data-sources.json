@@ -28,8 +28,71 @@
 				"closeIdleConnection": true,
 				"auth-model": "native"
 			}
+		},
+		"sqlite_jdbc-193783896e5-65cdfc6841ead503": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "Taller_Gadget.db",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\Carol\\OneDrive\\Documentos\\GitHub\\Team-Yamato\\Team_Gadget\\Taller_Gadget.db",
+				"url": "jdbc:sqlite:C:\\Users\\Carol\\OneDrive\\Documentos\\GitHub\\Team-Yamato\\Team_Gadget\\Taller_Gadget.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		},
+		"sqlite_jdbc-193783a696b-2933944a44cf6872": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "Taller_Gadget.db 2",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\Carol\\OneDrive\\Documentos\\GitHub\\Team-Yamato\\Team_Gadget\\Taller_Gadget.db",
+				"url": "jdbc:sqlite:C:\\Users\\Carol\\OneDrive\\Documentos\\GitHub\\Team-Yamato\\Team_Gadget\\Taller_Gadget.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		},
+		"microsoft-193783ac814-5cd088d83390edee": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "master",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName\u003dlocalhost;databaseName\u003dmaster",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-all-schemas@": "false",
+					"sslTrustServerCertificate": "false"
+				},
+				"auth-model": "sqlserver_database"
+			}
+		},
+		"sqlite_jdbc-193783b8494-30817d7022513c58": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "Taller_Gadget.db 3",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\Carol\\OneDrive\\Documentos\\GitHub\\Team-Yamato\\Team_Gadget\\Taller_Gadget.db",
+				"url": "jdbc:sqlite:C:\\Users\\Carol\\OneDrive\\Documentos\\GitHub\\Team-Yamato\\Team_Gadget\\Taller_Gadget.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
 		}
 	},
+	"virtual-models": {"sqlite_jdbc-193783b8494-30817d7022513c58":{"@properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202411291505\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"sqlite_jdbc-193783b8494-30817d7022513c58\"\u003e\u003centity id\u003d\"1\" name\u003d\"Categorias\" fq-name\u003d\"Categorias\" order\u003d\"0\" x\u003d\"437\" y\u003d\"315\"/\u003e\u003centity id\u003d\"2\" name\u003d\"Piezas\" fq-name\u003d\"Piezas\" order\u003d\"1\" x\u003d\"256\" y\u003d\"284\"/\u003e\u003centity id\u003d\"3\" name\u003d\"Proveedores\" fq-name\u003d\"Proveedores\" order\u003d\"2\" x\u003d\"53\" y\u003d\"96\"/\u003e\u003centity id\u003d\"4\" name\u003d\"Suministros\" fq-name\u003d\"Suministros\" order\u003d\"3\" x\u003d\"253\" y\u003d\"98\"/\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"FK_Piezas_Categorias\" fq-name\u003d\"Piezas.FK_Piezas_Categorias\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"2\"/\u003e\u003crelation name\u003d\"FK_Suministros_Piezas\" fq-name\u003d\"Suministros.FK_Suministros_Piezas\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"4\"/\u003e\u003crelation name\u003d\"FK_Suministros_Proveedores_2\" fq-name\u003d\"Suministros.FK_Suministros_Proveedores_2\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"4\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}}}},
 	"connection-types": {
 		"dev": {
 			"name": "Development",
