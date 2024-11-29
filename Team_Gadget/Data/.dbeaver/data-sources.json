@@ -1,0 +1,49 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-19378286f63-6000023cfa6abc4": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "taller_Gadget.db",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\Carol\\OneDrive\\Documentos\\GitHub\\Team-Yamato\\Team_Gadget\\taller_Gadget.db",
+				"url": "jdbc:sqlite:C:\\Users\\Carol\\OneDrive\\Documentos\\GitHub\\Team-Yamato\\Team_Gadget\\taller_Gadget.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		},
+		"sqlite_jdbc-1937828c8ed-6da3ad87bf50139a": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "taller_Gadget.db 2",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\Carol\\OneDrive\\Documentos\\GitHub\\Team-Yamato\\Team_Gadget\\taller_Gadget.db",
+				"url": "jdbc:sqlite:C:\\Users\\Carol\\OneDrive\\Documentos\\GitHub\\Team-Yamato\\Team_Gadget\\taller_Gadget.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
