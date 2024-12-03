@@ -1,0 +1,14 @@
+// Modelo Relacional Taller Gadget
+digraph {
+	Proveedores [label="Proveedores
+(ID_Proveedor, Nombre, Dirección, Ciudad, Provincia)" color=lightblue fontcolor=black style=filled]
+	Suministros [label="Suministros
+(ID_Suministro, ID_Proveedor, ID_Pieza, Cantidad, Fecha)" color=yellow fontcolor=black style=filled]
+	Piezas [label="Piezas
+(ID_Pieza, Nombre_pieza, Color, Precio, ID_Categoria)" color=lightgreen fontcolor=black style=filled]
+	Categorias [label="Categorías
+(ID_Categoria, Nombre_pieza)" color=orange fontcolor=black style=filled]
+	Proveedores -> Suministros [label=ID_Proveedor color=black]
+	Suministros -> Piezas [label=ID_Pieza color=black]
+	Piezas -> Categorias [label=ID_Categoria color=black]
+}

@@ -1,0 +1,10 @@
+// Modelo Relacional de Repuestos Automotrices
+digraph {
+	P [label=Proveedores color=green fontcolor=white style=filled]
+	S [label=Suministros color=yellow fontcolor=black style=filled]
+	PZ [label=Piezas color=blue fontcolor=white style=filled]
+	C [label="Categorías" color=red fontcolor=white style=filled]
+	P -> S [label=ID_Proveedor color=black]
+	S -> PZ [label=ID_Pieza color=black]
+	PZ -> C [label=ID_Categoria color=black]
+}
